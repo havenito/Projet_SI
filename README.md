@@ -1,7 +1,7 @@
 # TP Systèmes d'Information avancés ou critiques
 
 ## Idée
-Simuler une bactérie avec 4 états gérés en gRPC:
+Simuler une bactérie avec 4 états gérés en gRPC :
 - stable vivant
 - hypertrophie
 - atrophie
@@ -12,10 +12,11 @@ L'application web affiche le volume, l'état courant et permet de déclencher le
 ## Architecture
 - 1 pod web/API
 - 4 pods d'état gRPC
-- stockage simple en SQLite pour garder l'état des bactéries
+- stockage simple en SQLite pour conserver l'état des bactéries
 - métriques Prometheus pour le comptage des passages d'état
 
 ## Lancement local
+
 ```bash
 python -m pip install -r requirements.txt
 python -m app.main state --state stable_vivant --grpc-port 50051 --metrics-port 9101
@@ -26,9 +27,17 @@ python -m app.main api --host 0.0.0.0 --port 8000
 ```
 
 ## Test de performance
-Outil choisi: Locust.
 
-Script: [tests/performance/locustfile.py](tests/performance/locustfile.py)
+Outil choisi : **Apache JMeter**.
+
+Le plan de test JMeter est disponible dans le dossier :
+
+```text
+tests/performance/
+```
+
+Il permet de simuler plusieurs utilisateurs envoyant des requêtes vers l'API afin de mesurer les performances, les temps de réponse et le débit de l'application.
 
 ## Déploiement
-Les manifests Kubernetes sont dans le dossier [k8s](k8s).
+
+Les manifests Kubernetes sont disponibles dans le dossier `k8s`.
