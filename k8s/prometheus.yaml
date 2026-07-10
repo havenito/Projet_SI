@@ -1,11 +1,15 @@
+# --- CONFIGURATION DU SCRAPING PROMETHEUS (OPERATOR) ---
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  name: bacteria-monitor
+  name: bacteria-monitor      # Nom unique du ServiceMonitor dans ton cluster
 spec:
+  # Cible les services Kubernetes qui portent le label spécifique 'app: bacteria-stable'
   selector:
     matchLabels:
       app: bacteria-stable
+  
+  # Configuration du point de collecte des métriques
   endpoints:
-    - port: metrics
-      path: /metrics
+    - port: metrics           # Nom (ou numéro) du port réseau exposé sur le service pour les métriques
+      path: /metrics          # Route HTTP standard où prometheus_client expose les compteurs (ex: bacteria_state_traversals_total)

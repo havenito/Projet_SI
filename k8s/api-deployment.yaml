@@ -1,42 +1,47 @@
+# --- DEPLOIEMENT DE L'API FASTAPI (GATEWAY & WEB) ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bacteria-api
+  name: bacteria-api        # Nom unique du déploiement dans le cluster Kubernetes
 spec:
-  replicas: 1
+  replicas: 1               # Maintenu à 1 réplica car SQLite ne supporte pas nativement les écritures concurrentes distribuées (multi-pods)
   selector:
     matchLabels:
-      app: bacteria-api
+      app: bacteria-api     # Cible les pods portant ce label pour piloter leur cycle de vie
   template:
     metadata:
       labels:
-        app: bacteria-api
+        app: bacteria-api   # Label appliqué au pod créé par ce déploiement
     spec:
       containers:
         - name: api
-          image: bacteria-api:tp-20260710-2
-          imagePullPolicy: IfNotPresent
+          image: bacteria-api:tp-20260710-2   # Image Docker contenant ton code FastAPI
+          imagePullPolicy: IfNotPresent        # Utilise l'image locale si elle est déjà stockée sur le nœud
           ports:
-            - containerPort: 8000
+            - containerPort: 8000             # Port d'écoute par défaut défini dans ton main.py (Uvicorn)
           envFrom:
+            # Injecte toutes les variables d'environnement (ex: adresses gRPC, chemins) depuis une ConfigMap
             - configMapRef:
                 name: bacteria-config
           volumeMounts:
+            # Point d'ancrage du stockage persistant à l'intérieur du conteneur pour y poser la base SQLite
             - name: data
               mountPath: /data
       volumes:
+        # Lien logique vers un volume persistant externe pour garantir la survie des données SQLite si le pod redémarre
         - name: data
           persistentVolumeClaim:
             claimName: bacteria-data
 ---
+# --- SERVICE DE RESEAU : EXPOSITION DE L'API ---
 # Service web exposant l'interface utilisateur et les endpoints REST.
 apiVersion: v1
 kind: Service
 metadata:
-  name: bacteria-api
+  name: bacteria-api        # Nom du service (sert aussi d'adresse DNS interne pour les autres pods)
 spec:
   selector:
-    app: bacteria-api
+    app: bacteria-api       # Redirige le trafic réseau vers les pods portant le label 'app: bacteria-api'
   ports:
-    - port: 80
-      targetPort: 8000
+    - port: 80              # Port d'accès public externe exposé par le service (HTTP standard)
+      targetPort: 8000      # Port interne du conteneur vers lequel le trafic est redirigé

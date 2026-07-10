@@ -1,55 +1,67 @@
-syntax = "proto3";
+syntax = "proto3"; // Définit la version de la syntaxe Protobuf utilisée (v3)
 
-package bacteria;
+package bacteria; // Espace de noms pour éviter les conflits si importé ailleurs
 
+// --- DEFINITION DU SERVICE RPC ---
 service BacteriaState {
+  // Récupère les métadonnées descriptives de la bactérie pour son état actuel
   rpc Describe (BacteriaSnapshot) returns (StateDescription);
+  
+  // Calcule et applique l'évolution passive du volume de la bactérie liée au temps
   rpc Evolve (BacteriaSnapshot) returns (BacteriaSnapshot);
+  
+  // Demande l'autorisation d'effectuer un saut biologique vers un autre état
   rpc Transition (TransitionRequest) returns (TransitionResult);
+  
+  // Notifie le service qu'une nouvelle bactérie vient d'être affectée à cet état
   rpc RecordEntry (Empty) returns (EntryResult);
 }
 
+// --- ENUMERATIONS (TYPAGE DES ETATS) ---
 enum BacteriaStateType {
-  STATE_UNSPECIFIED = 0;
-  STABLE_VIVANT = 1;
-  HYPERTROPHIE = 2;
-  ATROPHIE = 3;
-  STABLE_IMPASSE = 4;
+  STATE_UNSPECIFIED = 0; // Obligatoire en proto3 : valeur par défaut (zéro-value)
+  STABLE_VIVANT = 1;     // Équivalent à "stable_vivant"
+  HYPERTROPHIE = 2;      // Équivalent à "hypertrophie"
+  ATROPHIE = 3;          // Équivalent à "atrophie"
+  STABLE_IMPASSE = 4;    // Équivalent à "stable_impasse" (état terminal)
 }
 
+// --- MESSAGES DE DONNÉES (PAYLOADS) ---
+
 message BacteriaSnapshot {
-  string id = 1;
-  string name = 2;
-  BacteriaStateType state = 3;
-  double volume = 4;
-  double last_action_at = 5;
-  double created_at = 6;
-  double updated_at = 7;
+  string id = 1;               // Identifiant unique (ex: 'bact-1710...')
+  string name = 2;             // Nom customisable de la bactérie
+  BacteriaStateType state = 3; // Type d'état typé via l'énumération ci-dessus
+  double volume = 4;           // Volume de la bactérie (type float 64 bits)
+  double last_action_at = 5;   // Timestamp UNIX de la dernière évolution ou action
+  double created_at = 6;       // Timestamp UNIX de création
+  double updated_at = 7;       // Timestamp UNIX de rafraîchissement
 }
 
 message StateDescription {
-  BacteriaStateType state = 1;
-  string label = 2;
-  repeated BacteriaStateType allowed_transitions = 3;
-  int32 traversals = 4;
-  string note = 5;
+  BacteriaStateType state = 1;                    // L'état décrit
+  string label = 2;                               // Libellé humain (UI)
+  repeated BacteriaStateType allowed_transitions = 3; // Tableau ('repeated') des états cibles atteignables
+  int32 traversals = 4;                           // Compteur de passages géré par le pod (entier 32 bits)
+  string note = 5;                                // Information contextuelle libre (ex: "+10% toutes les 10s")
 }
 
 message TransitionRequest {
-  BacteriaSnapshot current = 1;
-  BacteriaStateType target_state = 2;
+  BacteriaSnapshot current = 1;    // Données actuelles de la bactérie avant saut
+  BacteriaStateType target_state = 2; // L'état cible désiré
 }
 
 message TransitionResult {
-  bool accepted = 1;
-  string message = 2;
-  BacteriaSnapshot bacteria = 3;
-  repeated BacteriaStateType allowed_transitions = 4;
+  bool accepted = 1;                                  // True si la règle de transition est validée
+  string message = 2;                                 // Message justificatif (notamment en cas d'erreur 400)
+  BacteriaSnapshot bacteria = 3;                      // Nouveau snapshot généré après altération
+  repeated BacteriaStateType allowed_transitions = 4; // Liste mise à jour des choix futurs valides
 }
 
 message EntryResult {
-  BacteriaStateType state = 1;
-  int32 traversals = 2;
+  BacteriaStateType state = 1; // L'état dans lequel l'enregistrement a été fait
+  int32 traversals = 2;        // Nouvelle valeur du compteur de passages suite à l'incrément
 }
 
+// Message vide standard utilisé pour les RPC ne nécessitant pas de paramètres d'entrée
 message Empty {}

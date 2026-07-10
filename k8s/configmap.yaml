@@ -1,11 +1,17 @@
+# --- CONFIGURATION CENTRALE DU SYSTEME ---
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: bacteria-config
+  name: bacteria-config       # Nom de la ressource référencée par 'envFrom' dans le déploiement de ton API
 data:
+  # Résolution DNS interne Kubernetes : mappe chaque état biologique à l'adresse réseau de son pod gRPC respectif
   STATE_SERVICE_STABLE: "bacteria-stable:50051"
   STATE_SERVICE_HYPERTROPHIE: "bacteria-hypertrophie:50052"
   STATE_SERVICE_ATROPHIE: "bacteria-atrophie:50053"
   STATE_SERVICE_IMPASSE: "bacteria-impasse:50054"
+  
+  # URL d'accès optionnelle au serveur de monitoring Prometheus pour l'agrégation des métriques
   PROMETHEUS_URL: "http://prometheus:9090"
+  
+  # Emplacement absolu du fichier SQLite à l'intérieur du conteneur (aligné avec le point de montage /data)
   DATABASE_PATH: "/data/bacteria.db"

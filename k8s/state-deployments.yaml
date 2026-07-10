@@ -1,9 +1,12 @@
+# ==========================================
+# 1. MICROSERVICE D'ÉTAT : STABLE
+# ==========================================
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: bacteria-stable
 spec:
-  replicas: 1
+  replicas: 1                 # 1 seul pod suffit pour ce microservice stateless
   selector:
     matchLabels:
       app: bacteria-stable
@@ -16,10 +19,11 @@ spec:
         - name: stable
           image: bacteria-api:tp-20260710-2
           imagePullPolicy: IfNotPresent
+          # Surcharge de la commande : démarre le script CLI en mode "state" pour l'état stable_vivant
           command: ["python", "-m", "app.main", "state", "--state", "stable_vivant", "--grpc-port", "50051", "--metrics-port", "9101"]
           ports:
-            - containerPort: 50051
-            - containerPort: 9101
+            - containerPort: 50051  # Port dédié aux appels réseau gRPC
+            - containerPort: 9101   # Port dédié au serveur de métriques Prometheus
           envFrom:
             - configMapRef:
                 name: bacteria-config
@@ -27,18 +31,22 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: bacteria-stable
+  name: bacteria-stable       # Ce nom correspond à la valeur définie dans ta ConfigMap
 spec:
   selector:
     app: bacteria-stable
   ports:
     - name: grpc
       port: 50051
-      targetPort: 50051
+      targetPort: 50051       # Redirection du trafic gRPC
     - name: metrics
       port: 9101
-      targetPort: 9101
+      targetPort: 9101        # Redirection du trafic Prometheus (scraped par le ServiceMonitor)
+
 ---
+# ==========================================
+# 2. MICROSERVICE D'ÉTAT : HYPERTROPHIE
+# ==========================================
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -57,6 +65,7 @@ spec:
         - name: hypertrophie
           image: bacteria-api:tp-20260710-2
           imagePullPolicy: IfNotPresent
+          # Démarre le serveur gRPC configuré pour appliquer le gain de +10% en volume
           command: ["python", "-m", "app.main", "state", "--state", "hypertrophie", "--grpc-port", "50052", "--metrics-port", "9102"]
           ports:
             - containerPort: 50052
@@ -79,7 +88,11 @@ spec:
     - name: metrics
       port: 9102
       targetPort: 9102
+
 ---
+# ==========================================
+# 3. MICROSERVICE D'ÉTAT : ATROPHIE
+# ==========================================
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -98,6 +111,7 @@ spec:
         - name: atrophie
           image: bacteria-api:tp-20260710-2
           imagePullPolicy: IfNotPresent
+          # Démarre le serveur gRPC configuré pour appliquer la perte de -5% en volume
           command: ["python", "-m", "app.main", "state", "--state", "atrophie", "--grpc-port", "50053", "--metrics-port", "9103"]
           ports:
             - containerPort: 50053
@@ -120,7 +134,11 @@ spec:
     - name: metrics
       port: 9103
       targetPort: 9103
+
 ---
+# ==========================================
+# 4. MICROSERVICE D'ÉTAT : IMPASSE
+# ==========================================
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -139,6 +157,7 @@ spec:
         - name: impasse
           image: bacteria-api:tp-20260710-2
           imagePullPolicy: IfNotPresent
+          # Démarre l'état terminal (stable_impasse) où plus aucune action n'est permise
           command: ["python", "-m", "app.main", "state", "--state", "stable_impasse", "--grpc-port", "50054", "--metrics-port", "9104"]
           ports:
             - containerPort: 50054

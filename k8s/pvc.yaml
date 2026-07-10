@@ -1,10 +1,14 @@
+# --- DEMANDE DE STOCKAGE PERSISTANT ---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: bacteria-data
+  name: bacteria-data       # Nom unique de la ressource (référencé par le volume du pod de ton API)
 spec:
   accessModes:
+    # Mode d'accès exclusif : le volume peut être monté en lecture/écriture par un seul nœud à la fois.
+    # C'est le mode requis et idéal pour une base de données transactionnelle mono-instance comme SQLite.
     - ReadWriteOnce
   resources:
     requests:
+      # Allocation de 1 Go d'espace disque (largement suffisant pour stocker des millions d'historiques de bactéries)
       storage: 1Gi
