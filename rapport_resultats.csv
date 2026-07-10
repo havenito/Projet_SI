@@ -1,0 +1,401 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,Latency,IdleTime,Connect
+1783687323670,99,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,429,280,2,5,93,0,34
+1783687324227,34,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-2,text,true,,2320,156,3,5,34,0,1
+1783687324511,28,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-1,text,true,,2320,156,3,5,28,0,1
+1783687325427,38,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,390,308,2,6,38,0,0
+1783687325818,22,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,429,280,3,8,22,0,1
+1783687326008,24,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-3,text,true,,2475,156,5,8,24,0,1
+1783687326292,21,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-2,text,true,,2475,156,5,8,21,0,0
+1783687326591,44,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-4,text,true,,980,168,6,9,44,0,1
+1783687326695,31,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,428,280,3,9,31,0,1
+1783687326714,17,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,390,276,3,9,17,0,0
+1783687326753,27,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-5,text,true,,2653,156,6,9,27,0,1
+1783687326874,18,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-1,text,true,,2653,156,6,9,18,0,0
+1783687327439,39,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-3,text,true,,1278,168,6,9,39,0,0
+1783687327993,27,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,388,308,4,11,27,0,0
+1783687328471,7,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-5,text,true,,204,169,7,11,7,0,0
+1783687328810,17,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,458,187,4,12,17,0,0
+1783687329167,24,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-2,text,true,,2630,156,8,12,24,0,0
+1783687329396,18,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-6,text,true,,204,169,8,12,18,0,1
+1783687329405,23,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-4,text,true,,2630,156,8,12,23,0,0
+1783687329582,26,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,388,308,4,12,25,0,0
+1783687329647,22,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-5,text,true,,2607,156,9,14,21,0,0
+1783687329884,15,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-1,text,true,,2607,156,9,14,14,0,0
+1783687329967,27,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-7,text,true,,2607,156,9,14,27,0,1
+1783687329994,12,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,429,280,5,14,12,0,0
+1783687330085,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-3,text,true,,204,169,9,14,4,0,0
+1783687330445,13,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,389,276,5,14,13,0,0
+1783687330459,17,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-4,text,true,,2785,156,9,14,17,0,0
+1783687330523,22,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,429,280,5,14,22,0,1
+1783687330659,31,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-8,text,true,,2963,156,10,15,31,0,1
+1783687330691,47,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-6,text,true,,1805,168,10,15,47,0,0
+1783687330762,25,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-9,text,true,,204,169,10,15,25,0,1
+1783687331138,13,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,389,276,5,15,13,0,0
+1783687331179,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-7,text,true,,204,169,10,15,4,0,0
+1783687331211,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-2,text,true,,204,169,10,15,4,0,0
+1783687331238,6,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-5,text,true,,204,169,10,15,6,0,0
+1783687331453,34,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-1,text,true,,2963,156,10,15,33,0,0
+1783687331755,22,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,390,308,5,15,22,0,0
+1783687332135,18,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-8,text,true,,2940,156,10,15,18,0,0
+1783687332332,18,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,456,187,5,15,18,0,0
+1783687332364,18,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-4,text,true,,2940,156,10,15,18,0,0
+1783687332440,18,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-5,text,true,,2940,156,10,15,18,0,0
+1783687332485,29,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,427,280,5,15,29,0,1
+1783687332741,17,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-6,text,true,,3118,156,10,15,17,0,0
+1783687332768,21,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-3,text,true,,3118,156,10,15,21,0,0
+1783687332863,11,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,390,276,5,15,11,0,0
+1783687333103,21,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,456,187,5,15,21,0,0
+1783687333160,18,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-10,text,true,,204,169,10,15,18,0,1
+1783687333194,20,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-9,text,true,,3118,156,10,15,20,0,0
+1783687333273,134,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-8,text,true,,2071,168,10,15,134,0,0
+1783687333483,22,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,390,308,5,15,22,0,0
+1783687333686,3,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-2,text,true,,204,169,10,15,3,0,0
+1783687333682,15,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-7,text,true,,3095,156,10,15,15,0,0
+1783687334077,21,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-6,text,true,,3095,156,10,15,21,0,0
+1783687334245,19,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-9,text,true,,3095,156,10,15,19,0,0
+1783687334471,16,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-1,text,true,,3095,156,10,15,16,0,0
+1783687334528,22,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,389,308,5,15,22,0,0
+1783687334968,12,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,390,276,5,15,12,0,0
+1783687334979,42,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-4,text,true,,2004,168,10,15,42,0,0
+1783687335092,11,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,428,280,5,15,11,0,0
+1783687335218,15,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-8,text,true,,3250,156,10,15,14,0,0
+1783687335255,11,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,429,280,5,15,11,0,0
+1783687335264,5,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-6,text,true,,204,169,10,15,5,0,0
+1783687335652,86,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-10,text,true,,204,169,10,15,86,0,0
+1783687335403,343,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-5,text,true,,3428,156,10,15,343,0,0
+1783687335712,45,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-3,text,true,,3428,156,10,15,45,0,0
+1783687335814,26,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,457,187,5,15,26,0,0
+1783687336066,26,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-9,text,true,,3428,156,10,15,26,0,0
+1783687336121,67,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-2,text,true,,2600,168,10,15,67,0,0
+1783687336366,29,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,388,308,5,15,29,0,0
+1783687336441,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-8,text,true,,204,169,10,15,4,0,0
+1783687336446,41,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,458,187,5,15,40,0,0
+1783687336658,31,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-7,text,true,,3405,156,10,15,31,0,0
+1783687336980,47,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,390,308,5,15,47,0,0
+1783687337144,24,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-5,text,true,,3382,156,10,15,24,0,0
+1783687337402,5,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-1,text,true,,204,169,10,15,5,0,0
+1783687337423,22,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,389,276,5,15,22,0,0
+1783687337513,21,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,389,276,5,15,21,0,0
+1783687337696,17,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-3,text,true,,3382,156,10,15,17,0,0
+1783687337755,13,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,427,280,5,15,13,0,0
+1783687337831,6,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-10,text,true,,204,169,10,15,5,0,0
+1783687337947,5,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-4,text,true,,204,169,10,15,5,0,0
+1783687337953,17,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-9,text,true,,3561,156,10,15,17,0,0
+1783687337985,18,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-6,text,true,,3561,156,10,15,18,0,0
+1783687338093,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-2,text,true,,204,169,10,15,4,0,0
+1783687338274,15,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,428,280,5,15,15,0,0
+1783687338392,17,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-8,text,true,,3739,156,10,15,17,0,0
+1783687338624,74,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-1,text,true,,3127,168,10,15,74,0,0
+1783687338795,6,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-3,text,true,,204,169,10,15,5,0,0
+1783687339049,5,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-7,text,true,,204,169,10,15,5,0,0
+1783687339245,24,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-2,text,true,,3739,156,10,15,24,0,0
+1783687339674,20,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,457,187,5,15,20,0,0
+1783687339812,14,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,390,276,5,15,14,0,0
+1783687339922,24,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-9,text,true,,3739,156,10,15,24,0,0
+1783687339994,19,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,457,187,5,15,19,0,0
+1783687340097,5,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-5,text,true,,204,169,10,15,5,0,0
+1783687340141,15,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-10,text,true,,3739,156,10,15,15,0,0
+1783687340243,16,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-3,text,true,,3739,156,10,15,16,0,0
+1783687340330,24,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,389,308,5,15,24,0,0
+1783687340364,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-1,text,true,,204,169,10,15,4,0,0
+1783687340640,22,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,390,308,5,15,22,0,0
+1783687340663,99,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-6,text,true,,3694,156,10,15,99,0,0
+1783687340987,21,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-7,text,true,,3694,156,10,15,21,0,0
+1783687341018,9,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,427,280,5,15,9,0,0
+1783687340945,83,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-4,text,true,,3062,168,10,15,83,0,0
+1783687341293,27,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,429,280,5,15,27,0,0
+1783687341275,112,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-8,text,true,,3361,168,10,15,112,0,0
+1783687341415,27,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-10,text,true,,4050,156,10,15,26,0,0
+1783687341641,18,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-2,text,true,,4050,156,10,15,18,0,0
+1783687342043,22,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-9,text,true,,4050,156,10,15,22,0,0
+1783687342097,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-6,text,true,,205,169,10,15,4,0,0
+1783687342354,15,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,459,187,5,15,15,0,0
+1783687342451,16,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,389,276,5,15,15,0,0
+1783687342533,12,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,390,276,5,15,12,0,0
+1783687342665,16,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-3,text,true,,4050,156,10,15,15,0,0
+1783687342756,88,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-5,text,true,,3646,168,10,15,88,0,0
+1783687343080,21,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-9,text,true,,4050,156,10,15,21,0,0
+1783687343104,16,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-8,text,true,,4050,156,10,15,16,0,0
+1783687343126,18,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-1,text,true,,4050,156,10,15,18,0,0
+1783687343442,18,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-4,text,true,,4050,156,10,15,18,0,0
+1783687343574,3,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-10,text,true,,205,169,10,15,3,0,0
+1783687343806,21,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,389,308,5,15,21,0,0
+1783687343992,15,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-7,text,true,,4027,156,10,15,15,0,0
+1783687344196,23,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,388,308,5,15,23,0,0
+1783687344318,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-2,text,true,,205,169,10,15,4,0,0
+1783687344498,19,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-1,text,true,,4004,156,10,15,19,0,0
+1783687344536,76,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-6,text,true,,3588,168,10,15,76,0,0
+1783687344677,18,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,458,187,5,15,18,0,0
+1783687345062,27,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,389,276,5,15,27,0,0
+1783687345129,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-3,text,true,,205,169,10,15,4,0,0
+1783687345313,24,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-9,text,true,,4004,156,10,15,24,0,0
+1783687345356,12,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,426,280,5,15,12,0,0
+1783687345546,16,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,459,187,5,15,16,0,0
+1783687345728,17,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-6,text,true,,4182,156,10,15,17,0,0
+1783687345781,17,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-5,text,true,,4182,156,10,15,17,0,0
+1783687346061,18,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-8,text,true,,4182,156,10,15,18,0,0
+1783687346166,19,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-7,text,true,,4182,156,10,15,19,0,0
+1783687346208,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-4,text,true,,205,169,10,15,4,0,0
+1783687346357,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-10,text,true,,205,169,10,15,4,0,0
+1783687346489,10,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,426,280,5,15,10,0,0
+1783687346484,27,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,389,308,5,15,27,0,0
+1783687346578,14,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,389,276,5,15,14,0,0
+1783687346594,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-1,text,true,,205,169,10,15,4,0,0
+1783687346822,171,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-2,text,true,,4146,168,10,15,171,0,0
+1783687347199,20,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,458,187,5,15,20,0,0
+1783687347237,20,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-4,text,true,,4337,156,10,15,20,0,0
+1783687347289,18,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-3,text,true,,4337,156,10,15,18,0,0
+1783687347355,18,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-6,text,true,,4337,156,10,15,18,0,0
+1783687347442,18,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-8,text,true,,4337,156,10,15,18,0,0
+1783687347459,3,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-5,text,true,,205,169,10,15,3,0,0
+1783687347469,22,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-9,text,true,,4337,156,10,15,22,0,0
+1783687347733,19,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-10,text,true,,4337,156,10,15,19,0,0
+1783687348030,20,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,458,187,5,15,20,0,0
+1783687348113,13,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,429,280,5,15,13,0,0
+1783687348170,18,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-1,text,true,,4515,156,10,15,17,0,0
+1783687348409,26,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-7,text,true,,4515,156,10,15,26,0,0
+1783687348408,35,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,389,308,5,15,35,0,0
+1783687348601,12,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,389,276,5,15,12,0,0
+1783687349023,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-2,text,true,,205,169,10,15,4,0,0
+1783687349249,11,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,429,280,5,15,11,0,0
+1783687349273,17,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-10,text,true,,4670,156,10,15,17,0,0
+1783687349409,97,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-9,text,true,,4717,168,10,15,97,0,0
+1783687349543,15,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,429,280,5,15,15,0,0
+1783687349588,16,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-5,text,true,,4848,156,10,15,16,0,0
+1783687349902,19,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-3,text,true,,4848,156,10,15,19,0,0
+1783687349817,109,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-4,text,true,,5014,168,10,15,109,0,0
+1783687350142,21,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-8,text,true,,4848,156,10,15,21,0,0
+1783687350252,17,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-1,text,true,,4848,156,10,15,17,0,0
+1783687350369,3,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-6,text,true,,205,169,10,15,3,0,0
+1783687350549,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-2,text,true,,205,169,10,15,4,0,0
+1783687350678,25,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,388,308,5,15,25,0,0
+1783687350785,17,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-7,text,true,,4825,156,10,15,17,0,0
+1783687350852,109,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-9,text,true,,4978,168,10,15,108,0,0
+1783687350991,20,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-4,text,true,,4825,156,10,15,20,0,0
+1783687351002,17,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-10,text,true,,4825,156,10,15,17,0,0
+1783687351003,24,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-5,text,true,,4825,156,10,15,24,0,0
+1783687351055,30,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,390,308,5,15,30,0,0
+1783687351238,19,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,457,187,5,15,18,0,0
+1783687351256,13,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,388,276,5,15,13,0,0
+1783687351505,32,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,388,308,5,15,32,0,0
+1783687351522,116,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-1,text,true,,4944,168,10,15,116,0,0
+1783687351973,19,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-3,text,true,,4802,156,10,15,19,0,0
+1783687352066,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-2,text,true,,205,169,10,15,4,0,0
+1783687352065,15,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,388,276,5,15,15,0,0
+1783687351962,127,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-6,text,true,,4943,168,10,15,127,0,0
+1783687352135,18,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-8,text,true,,4802,156,10,15,18,0,0
+1783687352307,15,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,389,276,5,15,15,0,0
+1783687352448,18,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-5,text,true,,4802,156,10,15,18,0,0
+1783687352471,115,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-10,text,true,,4946,168,10,15,115,0,0
+1783687352644,22,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,458,187,5,15,22,0,0
+1783687352840,125,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-7,text,true,,4944,168,10,15,125,0,0
+1783687353205,5,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-1,text,true,,205,169,10,15,5,0,0
+1783687353205,21,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,458,187,5,15,21,0,0
+1783687353365,18,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-9,text,true,,4802,156,10,15,18,0,0
+1783687353492,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-8,text,true,,205,169,10,15,4,0,0
+1783687353802,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-3,text,true,,205,169,10,15,4,0,0
+1783687353705,115,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-4,text,true,,4945,168,10,15,115,0,0
+1783687354206,12,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,428,280,5,15,12,0,0
+1783687354113,117,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-6,text,true,,4945,168,10,15,117,0,0
+1783687354383,22,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-1,text,true,,4980,156,10,15,22,0,0
+1783687354486,16,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-9,text,true,,4980,156,10,15,16,0,0
+1783687354511,15,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,459,187,5,15,14,0,0
+1783687354535,12,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,424,276,5,15,12,0,0
+1783687354594,19,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-5,text,true,,4980,156,10,15,19,0,0
+1783687354715,18,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-10,text,true,,4980,156,10,15,18,0,0
+1783687354741,16,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-8,text,true,,4980,156,10,15,16,0,0
+1783687354890,16,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-7,text,true,,4980,156,10,15,16,0,0
+1783687354923,10,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,429,280,5,15,10,0,0
+1783687354912,123,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-2,text,true,,5246,168,10,15,123,0,0
+1783687355434,22,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-6,text,true,,5158,156,10,15,22,0,0
+1783687355549,15,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,427,280,5,15,15,0,0
+1783687355698,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-3,text,true,,205,169,10,15,4,0,0
+1783687355699,3,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-9,text,true,,205,169,10,15,3,0,0
+1783687355737,3,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-4,text,true,,205,169,10,15,3,0,0
+1783687355824,13,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,428,280,5,15,13,0,0
+1783687355880,22,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,390,308,5,15,22,0,0
+1783687356315,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-1,text,true,,205,169,10,15,4,0,0
+1783687356680,21,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-6,text,true,,5491,156,10,15,20,0,0
+1783687356868,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-10,text,true,,205,169,10,15,4,0,0
+1783687356934,16,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-5,text,true,,5491,156,10,15,16,0,0
+1783687357018,3,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-2,text,true,,205,169,10,15,3,0,0
+1783687356915,133,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-7,text,true,,6110,168,10,15,133,0,0
+1783687357086,19,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,502,187,5,15,19,0,0
+1783687357089,32,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,387,308,5,15,32,0,0
+1783687357308,15,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,390,276,5,15,15,0,0
+1783687357322,20,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,390,308,5,15,20,0,0
+1783687357545,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-8,text,true,,205,169,10,15,4,0,0
+1783687357660,21,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-4,text,true,,5445,156,10,15,21,0,0
+1783687357723,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-9,text,true,,205,169,10,15,4,0,0
+1783687357789,22,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,390,308,5,15,22,0,0
+1783687358176,20,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-3,text,true,,5422,156,10,15,20,0,0
+1783687358756,5,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-5,text,true,,205,169,10,15,5,0,0
+1783687358748,18,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,390,276,5,15,18,0,0
+1783687358784,16,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,388,276,5,15,16,0,0
+1783687358847,21,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,459,187,5,15,21,0,0
+1783687358856,17,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-9,text,true,,5422,156,10,15,17,0,0
+1783687359163,149,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-6,text,true,,6003,168,10,15,149,0,0
+1783687359242,145,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-1,text,true,,6006,168,10,15,145,0,0
+1783687359421,17,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-10,text,true,,5422,156,10,15,17,0,0
+1783687359562,10,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,429,280,5,15,10,0,0
+1783687359490,138,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-7,text,true,,6013,168,10,15,138,0,0
+1783687359706,13,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,390,276,5,15,13,0,0
+1783687359830,21,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-2,text,true,,5600,156,10,15,21,0,0
+1783687359902,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-5,text,true,,205,169,10,15,4,0,0
+1783687359947,19,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-4,text,true,,5600,156,10,15,19,0,0
+1783687360182,23,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-9,text,true,,5600,156,10,15,23,0,0
+1783687360374,16,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-3,text,true,,5600,156,10,15,16,0,0
+1783687360434,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-8,text,true,,205,169,10,15,4,0,0
+1783687360479,16,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,459,187,5,15,16,0,0
+1783687360704,129,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-10,text,true,,6310,168,10,15,129,0,0
+1783687360877,11,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,429,280,5,15,11,0,0
+1783687361355,23,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,390,308,5,15,23,0,0
+1783687361610,22,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,456,187,5,15,22,0,0
+1783687361937,26,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-8,text,true,,5755,156,10,15,26,0,0
+1783687362014,16,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-4,text,true,,5755,156,10,15,16,0,0
+1783687362057,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-10,text,true,,205,169,10,15,4,0,0
+1783687362095,18,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,459,187,5,15,18,0,0
+1783687362214,15,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-1,text,true,,5755,156,10,15,15,0,0
+1783687362113,139,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-5,text,true,,6577,168,10,15,139,0,0
+1783687362382,11,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,429,280,5,15,11,0,0
+1783687362286,145,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-6,text,true,,6580,168,10,15,145,0,0
+1783687362554,16,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-2,text,true,,5933,156,10,15,16,0,0
+1783687362496,143,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-7,text,true,,6876,168,10,15,143,0,0
+1783687362681,20,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,390,308,5,15,20,0,0
+1783687362829,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-9,text,true,,205,169,10,15,4,0,0
+1783687363204,18,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-3,text,true,,5910,156,10,15,18,0,0
+1783687363245,13,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,429,280,5,15,13,0,0
+1783687363430,24,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-4,text,true,,6088,156,10,15,24,0,0
+1783687363558,5,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-6,text,true,,205,169,10,15,5,0,0
+1783687363559,14,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,390,276,5,15,14,0,0
+1783687363636,23,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,390,308,5,15,23,0,0
+1783687363721,18,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-10,text,true,,6065,156,10,15,18,0,0
+1783687364052,23,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-1,text,true,,6065,156,10,15,23,0,0
+1783687364141,26,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-7,text,true,,6065,156,9,14,26,0,0
+1783687364279,12,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,427,280,5,14,12,0,0
+1783687364777,21,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-2,text,true,,6243,156,9,14,21,0,0
+1783687364917,25,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,390,308,5,14,25,0,0
+1783687364930,18,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-3,text,true,,6220,156,9,14,18,0,0
+1783687365056,23,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-5,text,true,,6220,156,9,14,23,0,0
+1783687365081,14,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,390,276,5,13,14,0,0
+1783687364961,172,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-8,text,true,,7374,168,8,13,172,0,0
+1783687365381,16,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,458,187,5,13,16,0,0
+1783687365577,17,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-9,text,true,,6220,156,8,13,17,0,0
+1783687365627,18,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-6,text,true,,6220,156,7,12,18,0,0
+1783687366136,19,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-3,text,true,,6220,156,6,11,19,0,0
+1783687366162,16,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-4,text,true,,6220,156,5,10,16,0,0
+1783687366193,12,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,390,276,5,10,12,0,0
+1783687366366,17,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-10,text,true,,6220,156,5,10,17,0,0
+1783687366468,18,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-7,text,true,,6220,156,5,10,18,0,0
+1783687366570,13,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,427,280,5,10,13,0,0
+1783687366710,20,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,389,308,5,10,20,0,0
+1783687367112,23,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,459,187,5,10,23,0,0
+1783687367210,17,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-2,text,true,,6375,156,5,10,17,0,0
+1783687367571,18,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,390,276,5,9,18,0,0
+1783687367707,15,GET / (Accueil) - poids 3/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-7,text,true,,6375,156,4,9,15,0,0
+1783687367609,208,GET /api/bacteria,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-8,text,true,,7644,168,4,9,208,0,0
+1783687367815,17,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,389,276,5,9,16,0,0
+1783687368199,21,GET / (Accueil) - poids 1/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-4,text,true,,6375,156,4,9,21,0,0
+1783687368393,21,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-10,text,true,,6375,156,3,8,21,0,0
+1783687368525,12,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,429,280,5,8,12,0,0
+1783687368838,24,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,387,308,5,8,24,0,0
+1783687368901,16,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,459,187,5,8,16,0,0
+1783687369217,21,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,458,187,5,8,21,0,0
+1783687369873,21,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,459,187,5,8,21,0,0
+1783687369875,24,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-8,text,true,,6530,156,3,8,24,0,0
+1783687370439,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-10,text,true,,205,169,2,7,4,0,0
+1783687370454,21,GET / (Accueil) - poids 2/3,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-7,text,true,,6530,156,1,6,21,0,0
+1783687370526,11,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,429,280,5,6,11,0,0
+1783687370609,14,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,387,276,5,6,14,0,0
+1783687370835,13,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,429,280,5,6,13,0,0
+1783687371221,24,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,390,308,5,6,24,0,0
+1783687371833,21,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,390,308,5,6,21,0,0
+1783687372043,20,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,390,308,5,6,20,0,0
+1783687372244,4,GET /api/dashboard,200,OK,1 - Utilisateurs en consultation (lecture seule) 1-7,text,true,,205,169,1,6,4,0,0
+1783687372520,12,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,428,280,5,5,12,0,0
+1783687372622,22,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,457,187,5,5,22,0,0
+1783687373521,14,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,389,276,5,5,14,0,0
+1783687374036,31,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,390,308,5,5,31,0,0
+1783687374094,19,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,390,276,5,5,19,0,0
+1783687374216,13,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,390,276,5,5,13,0,0
+1783687374745,17,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,429,280,5,5,17,0,0
+1783687375792,15,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,390,276,5,5,14,0,0
+1783687375821,24,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,388,308,5,5,24,0,0
+1783687376082,19,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,459,187,5,5,19,0,0
+1783687376974,17,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,458,187,5,5,17,0,0
+1783687377101,15,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,459,187,5,5,15,0,0
+1783687377203,12,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,429,280,5,5,12,0,0
+1783687377218,15,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,459,187,5,5,15,0,0
+1783687377712,13,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,388,276,5,5,13,0,0
+1783687378756,21,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,458,187,5,5,21,0,0
+1783687379062,14,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,428,280,5,5,14,0,0
+1783687379252,22,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,388,308,5,5,22,0,0
+1783687379788,16,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,429,280,5,5,16,0,0
+1783687380111,13,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,429,280,5,5,13,0,0
+1783687380662,23,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,390,308,5,5,23,0,0
+1783687381014,14,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,429,280,5,5,14,0,0
+1783687381495,22,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,390,308,5,5,22,0,0
+1783687381910,18,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,388,276,5,5,18,0,0
+1783687382269,21,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,390,308,5,5,21,0,0
+1783687382651,22,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,390,308,5,5,22,0,0
+1783687382836,16,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,389,276,5,5,15,0,0
+1783687383017,14,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,389,276,5,5,14,0,0
+1783687384251,15,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,459,187,5,5,15,0,0
+1783687384595,21,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,458,187,5,5,21,0,0
+1783687384596,21,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,390,276,5,5,21,0,0
+1783687385275,16,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,390,276,5,5,16,0,0
+1783687385806,25,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,459,187,5,5,25,0,2
+1783687385945,34,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,456,187,5,5,34,0,1
+1783687386582,18,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,429,280,5,5,18,0,0
+1783687387106,26,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,429,280,5,5,26,0,2
+1783687387282,12,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,429,280,5,5,12,0,0
+1783687387487,13,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,427,280,5,5,13,0,0
+1783687387563,16,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,459,187,5,5,16,0,0
+1783687388668,27,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,390,308,5,5,27,0,0
+1783687388883,27,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,390,308,5,5,27,0,0
+1783687389694,27,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,388,308,5,5,27,0,0
+1783687389940,13,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,429,280,5,5,13,0,0
+1783687390238,13,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,390,276,5,5,13,0,0
+1783687390421,23,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,389,308,5,5,23,0,0
+1783687391128,19,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,388,276,5,5,19,0,0
+1783687391552,27,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,389,276,5,5,27,0,1
+1783687392438,19,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,457,187,5,5,19,0,0
+1783687392625,32,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,388,308,5,5,32,0,1
+1783687392881,20,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,389,276,5,5,20,0,0
+1783687393104,18,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,459,187,5,5,18,0,0
+1783687393571,22,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,458,187,5,5,22,0,0
+1783687394161,17,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,457,187,5,5,17,0,0
+1783687394825,17,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,429,280,5,5,17,0,0
+1783687394830,18,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,429,280,5,5,18,0,0
+1783687395431,12,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,427,280,5,5,12,0,0
+1783687395431,15,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,389,276,5,5,14,0,0
+1783687395598,14,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,429,280,5,5,14,0,0
+1783687396483,24,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,389,308,5,5,24,0,0
+1783687396922,30,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,388,308,5,5,30,0,0
+1783687396924,30,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,390,308,5,5,30,0,0
+1783687397035,21,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,390,308,5,5,21,0,0
+1783687397856,14,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,389,276,5,5,14,0,0
+1783687398091,14,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,390,276,5,5,14,0,0
+1783687398344,22,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,458,187,5,5,22,0,0
+1783687398408,14,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,390,276,5,5,14,0,0
+1783687398936,18,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-2,text,true,,458,187,5,5,18,0,0
+1783687399433,17,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,459,187,4,4,17,0,0
+1783687399571,15,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,429,280,4,4,15,0,0
+1783687399710,15,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,388,276,4,4,15,0,0
+1783687400402,16,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-1,text,true,,459,187,4,4,16,0,0
+1783687400852,15,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,457,187,3,3,15,0,0
+1783687401725,20,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,384,308,3,3,20,0,0
+1783687402248,12,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,428,280,3,3,12,0,0
+1783687402800,14,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,429,280,3,3,14,0,0
+1783687403023,18,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,387,276,3,3,18,0,0
+1783687404841,27,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,390,308,3,3,27,0,0
+1783687405451,25,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,390,308,3,3,25,0,0
+1783687405847,16,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,456,187,3,3,16,0,0
+1783687407317,17,POST /api/bacteria (création),201,Created,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,429,280,3,3,17,0,0
+1783687407637,13,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,390,276,3,3,13,0,0
+1783687408226,13,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,390,276,3,3,13,0,0
+1783687408868,15,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-3,text,true,,459,187,3,3,15,0,0
+1783687409690,27,POST /api/bacteria/{id}/transition,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,390,308,2,2,27,0,0
+1783687410399,17,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-4,text,true,,459,187,2,2,17,0,0
+1783687412148,18,POST /api/bacteria/{id}/tick,200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,390,276,1,1,18,0,0
+1783687414701,18,GET /api/bacteria/{id},200,OK,2 - Utilisateurs actifs (création / transition / tick) 2-5,text,true,,459,187,1,1,18,0,0
