@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: bacteria-api:latest
+          image: bacteria-api:tp-20260710-2
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000

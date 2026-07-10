@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: stable
-          image: bacteria-api:latest
+          image: bacteria-api:tp-20260710-2
           imagePullPolicy: IfNotPresent
           command: ["python", "-m", "app.main", "state", "--state", "stable_vivant", "--grpc-port", "50051", "--metrics-port", "9101"]
           ports:
@@ -55,7 +55,7 @@ spec:
     spec:
       containers:
         - name: hypertrophie
-          image: bacteria-api:latest
+          image: bacteria-api:tp-20260710-2
           imagePullPolicy: IfNotPresent
           command: ["python", "-m", "app.main", "state", "--state", "hypertrophie", "--grpc-port", "50052", "--metrics-port", "9102"]
           ports:
@@ -96,7 +96,7 @@ spec:
     spec:
       containers:
         - name: atrophie
-          image: bacteria-api:latest
+          image: bacteria-api:tp-20260710-2
           imagePullPolicy: IfNotPresent
           command: ["python", "-m", "app.main", "state", "--state", "atrophie", "--grpc-port", "50053", "--metrics-port", "9103"]
           ports:
@@ -137,7 +137,7 @@ spec:
     spec:
       containers:
         - name: impasse
-          image: bacteria-api:latest
+          image: bacteria-api:tp-20260710-2
           imagePullPolicy: IfNotPresent
           command: ["python", "-m", "app.main", "state", "--state", "stable_impasse", "--grpc-port", "50054", "--metrics-port", "9104"]
           ports:
