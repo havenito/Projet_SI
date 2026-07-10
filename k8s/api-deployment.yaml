@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bacteria-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bacteria-api
+  template:
+    metadata:
+      labels:
+        app: bacteria-api
+    spec:
+      containers:
+        - name: api
+          image: bacteria-api:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+          envFrom:
+            - configMapRef:
+                name: bacteria-config
+          volumeMounts:
+            - name: data
+              mountPath: /data
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: bacteria-data
+---
+# Service web exposant l'interface utilisateur et les endpoints REST.
+apiVersion: v1
+kind: Service
+metadata:
+  name: bacteria-api
+spec:
+  selector:
+    app: bacteria-api
+  ports:
+    - port: 80
+      targetPort: 8000

@@ -1,0 +1,1 @@
+Expose bacteria-api service on port 80 or via Ingress according to cluster setup.

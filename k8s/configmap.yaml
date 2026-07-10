@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: bacteria-config
+data:
+  STATE_SERVICE_STABLE: "bacteria-stable:50051"
+  STATE_SERVICE_HYPERTROPHIE: "bacteria-hypertrophie:50052"
+  STATE_SERVICE_ATROPHIE: "bacteria-atrophie:50053"
+  STATE_SERVICE_IMPASSE: "bacteria-impasse:50054"
+  PROMETHEUS_URL: "http://prometheus:9090"
+  DATABASE_PATH: "/data/bacteria.db"

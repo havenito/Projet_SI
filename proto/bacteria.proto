@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+package bacteria;
+
+service BacteriaState {
+  rpc Describe (BacteriaSnapshot) returns (StateDescription);
+  rpc Evolve (BacteriaSnapshot) returns (BacteriaSnapshot);
+  rpc Transition (TransitionRequest) returns (TransitionResult);
+  rpc RecordEntry (Empty) returns (EntryResult);
+}
+
+enum BacteriaStateType {
+  STATE_UNSPECIFIED = 0;
+  STABLE_VIVANT = 1;
+  HYPERTROPHIE = 2;
+  ATROPHIE = 3;
+  STABLE_IMPASSE = 4;
+}
+
+message BacteriaSnapshot {
+  string id = 1;
+  string name = 2;
+  BacteriaStateType state = 3;
+  double volume = 4;
+  double last_action_at = 5;
+  double created_at = 6;
+  double updated_at = 7;
+}
+
+message StateDescription {
+  BacteriaStateType state = 1;
+  string label = 2;
+  repeated BacteriaStateType allowed_transitions = 3;
+  int32 traversals = 4;
+  string note = 5;
+}
+
+message TransitionRequest {
+  BacteriaSnapshot current = 1;
+  BacteriaStateType target_state = 2;
+}
+
+message TransitionResult {
+  bool accepted = 1;
+  string message = 2;
+  BacteriaSnapshot bacteria = 3;
+  repeated BacteriaStateType allowed_transitions = 4;
+}
+
+message EntryResult {
+  BacteriaStateType state = 1;
+  int32 traversals = 2;
+}
+
+message Empty {}

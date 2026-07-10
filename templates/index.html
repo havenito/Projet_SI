@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TP bactérie</title>
+</head>
+<body>
+  <div class="bloc">
+    <h1>{{ bacteria.name }}</h1>
+    <div class="ligne">Etat : <strong>{{ display_state(bacteria.state) }}</strong></div>
+    <div class="ligne">Volume : <strong>{{ "%.4f"|format(bacteria.volume) }} m3</strong></div>
+    <div class="ligne">Traversées : <strong>{{ description.traversals }}</strong></div>
+
+    <div class="boutons">
+      <form action="/api/bacteria/{{ bacteria.id }}/tick" method="post">
+        <button type="submit">Appliquer l'évolution</button>
+      </form>
+
+      {% for target in description.allowed_transitions %}
+      <form action="/api/bacteria/{{ bacteria.id }}/transition" method="post">
+        <input type="hidden" name="target_state" value="{{ target }}">
+        {% if target == 'hypertrophie' %}
+        <button type="submit">Hypertrophie</button>
+        {% elif target == 'atrophie' %}
+        <button type="submit">Atrophie</button>
+        {% elif target == 'stable_vivant' %}
+        <button type="submit">Retour stable</button>
+        {% else %}
+        <button type="submit">Impasse</button>
+        {% endif %}
+      </form>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="bloc">
+    <h2>Créer une bactérie</h2>
+    <p>On peut en créer une nouvelle si besoin, elle démarre en mode stable.</p>
+    <form action="/api/bacteria" method="post">
+      <input name="name" placeholder="Nom de la bactérie" value="Nouvelle bactérie">
+      <button type="submit">Créer</button>
+    </form>
+  </div>
+
+  <div class="bloc">
+    <h2>Liste des bactéries</h2>
+    {% for item in all_bacteria %}
+    <div class="ligne">
+      <a href="/?bacteria_id={{ item.id }}">{{ item.name }}</a> -
+      {{ display_state(item.state) }} -
+      {{ "%.4f"|format(item.volume) }} m3
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="bloc">
+    <h2>Comptage</h2>
+    {% for key, value in dashboard.counts.items() %}
+    <div class="ligne">{{ display_state(key) }} : {{ value }}</div>
+    {% endfor %}
+  </div>
+
+  <p class="petit">Page simple, juste ce qu'il faut pour le TP.</p>
+</body>
+</html>
