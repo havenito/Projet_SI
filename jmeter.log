@@ -20,3 +20,123 @@
 2026-07-10 14:14:31,519 INFO o.a.j.JMeter: IP: 10.1.4.104 Name: Enzo FullName: host.docker.internal
 2026-07-10 14:14:31,535 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
 2026-07-10 14:14:31,651 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2026-07-10 14:14:32,776 INFO o.a.j.JMeterGuiLauncher: Loading file: tests\performance\jmeter.jmx
+2026-07-10 14:14:32,777 INFO o.a.j.s.FileServer: Default base='C:\Users\enzom\OneDrive\Bureau\SI TP FINAL'
+2026-07-10 14:14:32,779 INFO o.a.j.s.FileServer: Set new base='C:\Users\enzom\OneDrive\Bureau\SI TP FINAL\tests\performance'
+2026-07-10 14:14:32,933 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-07-10 14:14:32,956 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-07-10 14:14:32,961 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-07-10 14:14:32,965 INFO o.a.j.s.SaveService: Loading file: tests\performance\jmeter.jmx
+2026-07-10 14:14:32,996 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2026-07-10 14:14:33,016 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-07-10 14:14:33,016 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-07-10 14:14:33,016 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-07-10 14:14:33,016 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-07-10 14:14:33,016 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-07-10 14:14:33,016 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-07-10 14:14:33,301 INFO o.a.j.s.FileServer: Set new base='C:\Users\enzom\OneDrive\Bureau\SI TP FINAL\tests\performance'
+2026-07-10 14:14:33,393 ERROR o.a.j.g.GuiPackage: Could not get GUI for org.apache.jmeter.protocol.http.control.CookieManager@291cbb3b
+java.lang.ClassNotFoundException: CookiePanelGui
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_481]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_481]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_481]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_481]
+	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_481]
+	at org.apache.jmeter.gui.GuiPackage.getGui(GuiPackage.java:236) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addComponent(JMeterTreeModel.java:160) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addSubTree(JMeterTreeModel.java:131) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addSubTree(JMeterTreeModel.java:123) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.GuiPackage.addSubTree(GuiPackage.java:555) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.action.Load.insertLoadedTree(Load.java:201) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.action.Load.insertLoadedTree(Load.java:237) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeterGuiLauncher.loadFile(JMeterGuiLauncher.kt:143) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeterGuiLauncher.access$loadFile(JMeterGuiLauncher.kt:47) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeterGuiLauncher$loadFile$1.invokeSuspend(JMeterGuiLauncher.kt) ~[ApacheJMeter_core.jar:5.6.3]
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33) ~[kotlin-stdlib-1.9.22.jar:1.9.22-release-704]
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108) ~[kotlinx-coroutines-core-jvm-1.7.3.jar:?]
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.EventQueue.access$500(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.EventQueue$3.run(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.EventQueue$3.run(Unknown Source) ~[?:1.8.0_481]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_481]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.EventQueue.dispatchEvent(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.WaitDispatchSupport$2.run(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.WaitDispatchSupport$4.run(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.WaitDispatchSupport$4.run(Unknown Source) ~[?:1.8.0_481]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_481]
+	at java.awt.WaitDispatchSupport.enter(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.Dialog.show(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.Component.show(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.Component.setVisible(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.Window.setVisible(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.Dialog.setVisible(Unknown Source) ~[?:1.8.0_481]
+	at org.apache.jmeter.SplashScreen.lambda$showScreen$0(SplashScreen.java:95) ~[ApacheJMeter_core.jar:5.6.3]
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventQueue.access$500(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventQueue$3.run(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventQueue$3.run(Unknown Source) [?:1.8.0_481]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_481]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventQueue.dispatchEvent(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventDispatchThread.run(Unknown Source) [?:1.8.0_481]
+2026-07-10 14:14:33,398 ERROR o.a.j.JMeterGuiLauncher: Failure loading test file
+java.lang.NullPointerException: null
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addComponent(JMeterTreeModel.java:161) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addSubTree(JMeterTreeModel.java:131) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.tree.JMeterTreeModel.addSubTree(JMeterTreeModel.java:123) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.GuiPackage.addSubTree(GuiPackage.java:555) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.action.Load.insertLoadedTree(Load.java:201) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.action.Load.insertLoadedTree(Load.java:237) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeterGuiLauncher.loadFile(JMeterGuiLauncher.kt:143) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeterGuiLauncher.access$loadFile(JMeterGuiLauncher.kt:47) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeterGuiLauncher$loadFile$1.invokeSuspend(JMeterGuiLauncher.kt) ~[ApacheJMeter_core.jar:5.6.3]
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33) ~[kotlin-stdlib-1.9.22.jar:1.9.22-release-704]
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108) ~[kotlinx-coroutines-core-jvm-1.7.3.jar:?]
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.EventQueue.access$500(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.EventQueue$3.run(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.EventQueue$3.run(Unknown Source) ~[?:1.8.0_481]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_481]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.EventQueue.dispatchEvent(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.WaitDispatchSupport$2.run(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.WaitDispatchSupport$4.run(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.WaitDispatchSupport$4.run(Unknown Source) ~[?:1.8.0_481]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_481]
+	at java.awt.WaitDispatchSupport.enter(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.Dialog.show(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.Component.show(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.Component.setVisible(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.Window.setVisible(Unknown Source) ~[?:1.8.0_481]
+	at java.awt.Dialog.setVisible(Unknown Source) ~[?:1.8.0_481]
+	at org.apache.jmeter.SplashScreen.lambda$showScreen$0(SplashScreen.java:95) ~[ApacheJMeter_core.jar:5.6.3]
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventQueue.access$500(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventQueue$3.run(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventQueue$3.run(Unknown Source) [?:1.8.0_481]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_481]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventQueue.dispatchEvent(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source) [?:1.8.0_481]
+	at java.awt.EventDispatchThread.run(Unknown Source) [?:1.8.0_481]
+2026-07-10 14:14:33,398 ERROR o.a.j.u.JMeterUtils: java.lang.NullPointerException
