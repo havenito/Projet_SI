@@ -1,0 +1,22 @@
+2026-07-10 14:14:31,498 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-07-10 14:14:31,507 INFO o.a.j.JMeter: Loading user properties from: C:\Outils\apache-jmeter-5.6.3\bin\user.properties
+2026-07-10 14:14:31,507 INFO o.a.j.JMeter: Loading system properties from: C:\Outils\apache-jmeter-5.6.3\bin\system.properties
+2026-07-10 14:14:31,513 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-07-10 14:14:31,513 INFO o.a.j.JMeter: Version 5.6.3
+2026-07-10 14:14:31,514 INFO o.a.j.JMeter: java.version=1.8.0_481
+2026-07-10 14:14:31,514 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) Client VM
+2026-07-10 14:14:31,514 INFO o.a.j.JMeter: os.name=Windows 11
+2026-07-10 14:14:31,514 INFO o.a.j.JMeter: os.arch=x86
+2026-07-10 14:14:31,514 INFO o.a.j.JMeter: os.version=10.0
+2026-07-10 14:14:31,514 INFO o.a.j.JMeter: file.encoding=Cp1252
+2026-07-10 14:14:31,514 INFO o.a.j.JMeter: java.awt.headless=null
+2026-07-10 14:14:31,514 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-07-10 14:14:31,514 INFO o.a.j.JMeter: Available Processors =12
+2026-07-10 14:14:31,517 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-07-10 14:14:31,517 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-07-10 14:14:31,517 INFO o.a.j.JMeter: JMeterHome=C:\Outils\apache-jmeter-5.6.3
+2026-07-10 14:14:31,517 INFO o.a.j.JMeter: user.dir  =C:\Users\enzom\OneDrive\Bureau\SI TP FINAL
+2026-07-10 14:14:31,518 INFO o.a.j.JMeter: PWD       =C:\Users\enzom\OneDrive\Bureau\SI TP FINAL
+2026-07-10 14:14:31,519 INFO o.a.j.JMeter: IP: 10.1.4.104 Name: Enzo FullName: host.docker.internal
+2026-07-10 14:14:31,535 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2026-07-10 14:14:31,651 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
